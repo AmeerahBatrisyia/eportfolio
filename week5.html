@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial--scale=1">
+	<title>week5</title>
+	<style type="text/css">
+		img{ /*element selector*/
+			width: 300px;
+			height: 250px;
+			display: block;
+			/*block will force to go under each other*/
+		}
+		p{
+			font-weight: bold;
+			font-style: italic;
+		}
+
+		/*.greenborder{border: 2px solid green;} any element*/
+
+		img.greenborder{border: 2px solid green;} 
+		img.blueborder{border: 3px dotted blue;}
+		/*class selector. diff stuff have same aesth*/
+		/*only apply to element type img*/
+		/*semicolon: 1 property its optional. many property must have except the last one*/
+		
+		img#biggerimg{border: 2px solid brown; width: 400px; height: 400px}
+		/*id selector*/
+		/*only for id attr. id only one per use. no multiple properties in it (single element)*/
+		
+		/*p#font16{font-size: 16px;}
+		p.font20{font-size: 20px;}
+		p.orange{color: orange;}
+		p#magenta{color: magenta;}*/
+
+		p.font20{font-size: 20px;}
+		p.orange{color: orange;}
+		p#font16{font-size: 16px;}
+		p#magenta{color: magenta;}
+
+		div{width: 200px; height: 300px; border: 1px solid; display: inline;} /*display will turn block to inline and continue beside img bcs its inline*/
+		span{width: 400px; height: 400px; display: block;  border: 1px solid;} /*display will turn inline to block */
+
+	</style>           
+
+</head>
+<body>
+	<img src="v-1.jpg" id="biggerimg">
+<p id="font16" class="orange">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+<img src="assets/images/id/i-1.jpg" class="greenborder">
+<img src="assets/images/id/i-2.jpg" class="greenborder">
+<img src="assets/images/id/i-3.jpg" class="greenborder">
+
+<p class="font20 orange"><!-- must only have one class attr -->Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+<img src="assets/images/my/m-1.jpg" class="blueborder">
+<img src="assets/images/my/m-2.jpg" class="blueborder">
+<img src="assets/images/my/m-3.jpg" class="blueborder">
+
+<p class="font20" id="magenta">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+<img src="assets/images/th/t-1.jpg" class="greenborder">
+<img src="assets/images/th/t-2.jpg" class="greenborder">
+<img src="assets/images/th/t3.jpg" class="greenborder">
+
+<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div> <!-- block element -->
+<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span> <!-- in line element, no effect from the properties-->
+<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
+
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial--scale=1">
+	<title>week5-2</title>
+	<style type="text/css">
+		
+		div{width: 300px; height: 300px; border: 1px solid;/*display: inline-block;*/}
+
+		p#blue{color: blue;}
+		p#red{color: red;}
+		p#magenta{color: magenta;}
+		p.orange{color: orange}
+		p{color: brown}
+
+		p.green{color: green; font-size: 2em} /*2x the default font size*/
+
+		/*div p{color: green; font-size: 1.5em}*/ /*descendant selector, all in it will change*/
+
+		/*div>p{color: green; font-size: 1.5em}*/ /*child selector, only the child in a descendant will change*/
+
+		/*.italic{font-style: italic;}*/
+
+		#first span, #first b{font-style: italic;} /*descendant + multiple selector. coma is to combine*/
+
+	</style>
+</head>
+<body>
+
+<div>
+	<p id="blue">Im the first p</p>
+	<p  id="red" class="orange" style="color: violet">Im the second p<p id="magenta">Im the first of the second p</p></p>
+	<!-- (commented) -->
+
+	<!-- 1 style, 2 id, 3 class, 4 element (commented) -->
+
+	<p  class="orange">Im the second p<p id="magenta">Im the first of the second p</p></p>
+
+	<p>Im the third</p>
+
+</div>
+
+<div id="first"> <!--inside are the descendants-->
+
+	<!-- <p class="green">1</p> 
+	<p class="green">2</p>
+	<p class="green">3
+		<p class="green">3.1</p>
+		<p class="green">3.2</p>
+	</p> -->
+
+	<p>1</p>
+	<p>2</p>
+	<p>3
+		<!-- <p>3.1</p> -->
+		<p>3.2</p>
+	</p>
+
+
+	<span class="italic">Im span 1<p>p in span</p></span>
+	<b class="italic">Im bold</b>
+
+	<!-- <span>Im span 1
+		<p>p in span</p> block
+	</span>
+	<b>Im bold</b>
+
+</div>
+
+<div>
+	<p>p in div</p>
+	<span>span in second div</span>
+	<b>bold in second div</b>
+</div> -->
+</body>
+</html>
