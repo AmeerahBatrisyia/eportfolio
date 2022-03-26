@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Week7-e-p3</title>
+
+	<style>
+	
+	#mainbox{
+		       display: flex;
+		       flex-direction: column;
+		       flex-wrap: wrap;
+			   margin: 0px auto;
+			   width: 600px;
+		   	}
+
+
+	.one{
+		    width: 400px;
+			padding: 5px 0px;
+			box-sizing: border-box;
+			border: 1px solid;
+			text-align: center;
+			margin: auto;
+			border-style: hidden;
+			}
+
+	.two{
+			display: flex;
+			flex-grow: 1;
+			padding: 5px 0px;
+			box-sizing: border-box;
+			margin: auto;
+			}
+
+
+	.three{flex-grow: 1;}
+
+
+	.four{
+			text-align: center;
+			padding: 5px 0px;
+			flex: 100%;
+			box-sizing: border-box;
+			}
+
+
+</style>
+</head>
+
+<body>
+	<div id="mainbox">
+	
+			<div class="one"><label>Fullname</label></div>
+			<div class="two"><input class="three" type="text" name="fullname" min="" max="30" pattern="[a-zA-Z]" title="only lowercase and uppercase alphabets are allowed. max 30 characters" size="30"></div>
+		
+			<div class="one"><label>Email</label></div>
+			<div class="two"><input class="three" name="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-z]{2,}$" title="set to mail" size="30"></div>
+	
+			<div class="one"><label>Date you can start</label></div>
+			<div class="two"><input class="three" type="date" name="date"></div>
+	
+			<div class="one"><label>Morning shift preference</label></div>
+			<div class="two"><input class="three" type="time" name="time"></div>
+	
+			<div class="one"><label>Evening shift perference</label></div>
+			<div class="two"><input class="three" type="time" name="time"></div>
+	
+			<div class="one"><label>How many hours you can work? In multiple of 3</label></div>
+			<div class="two"><input class="three" type="number" name="number" min="3" max="9"></div>
+	
+			<div class="one"><label>Distance you willing to commute to volunteer center?</label></div>
+			<div class="two">1<input type="range" name="range" min="1" max="15" value="3">15</div>
+
+			<div class="one"><label>You currency perference for payment?</label></div>
+			<div class="two">
+				<input type="radio" name="currency" id="pound" value="pound" for="pound">
+				<label>&pound;</label>
+
+				<input type="radio" name="currency" id="yen" value="yen"><label for="yen">
+				<label>&yen;</label>
+
+				<input type="radio" name="currency" id="euro" value="euro"><label for="euro">
+				<label>&euro;</label>
+			</div>
+
+	<div class="four">
+			<textarea placeholder="Type your home address" rows="6" cols="40"></textarea>
+	</div>
+
+	<div class="four">
+			<del>You will be given daily meals</del>
+	</div>
+
+	<div class="four">
+			<label for="checkterms"><input type="checkbox" checked="" disabled="" name="agree" id="agree" value="agree"> I agree to all terms and conditions</label>
+	</div>
+
+	<div class="four">
+			<label>Prove you are not robot: 10 &#60; 20? 
+			<input type="checkbox" name="robot" id="robot" value="robot"></label>
+	</div>
+
+	<div class="four">
+			<input type="submit" type="button" name="Volunteer now!" value="Volunteer now!">
+	</div>
+
+	<div class="four">	
+			<input type="reset" type="button" name="Start over" value="Start over">
+	</div>
+
+	<div class="four">
+			<label>For more informaton, visit MOH <a href="https://www.moh.gov.bn/">website</a></label>
+	</div>
+
+</div>
+</body>
+</html>
