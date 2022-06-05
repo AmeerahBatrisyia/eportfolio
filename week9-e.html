@@ -1,0 +1,202 @@
+<html !DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+
+  <style type="text/css">
+
+      /*desktop*/
+      @media screen and (min-width: 800px){
+
+        .main{
+          display: grid;
+          padding: 10px;
+          width: 90%;
+          margin: auto;
+          text-align: center;
+          grid-template-columns: 1fr 1fr 1fr 1fr;
+          grid-template-rows: 150px 150px 150px 150px;
+          grid-auto-rows:1fr;
+          grid-auto-columns:150px;
+          grid-gap: 2em;
+          
+
+          grid-template-areas:
+            'two one one one'
+            'three six six six'
+            'four seven seven seven'
+            'five eight eight eight'
+        }
+
+        .main>.submain:nth-child(1){grid-area: one;}
+        .main>.submain:nth-child(2){grid-area:two;}
+        .main>.submain:nth-child(3){grid-area:three;}
+        .main>.submain:nth-child(4){grid-area:four;}
+        .main>.submain:nth-child(5){grid-area:five;}
+        .main>.submain:nth-child(6){grid-area:six;}
+        .main>.submain:nth-child(7){grid-area:seven;}
+        .main>.submain:nth-child(8){grid-area: eight;}
+
+        .submain{
+            display: grid;
+            grid-template-rows: 1fr;
+            align-items: center;
+            background-color: skyblue;
+
+            grid-template-areas:
+            'second'
+            'first'
+        }
+
+        .submain>div:nth-child(1){
+          background-color: lightseagreen;
+          font-size: 1em;
+          grid-area: first;
+        }
+
+        .submain>div:nth-child(2){
+          background-color: skyblue;
+          font-size:1em;
+          grid-area: second;
+        }
+      }
+
+      /*mobile*/
+      @media screen and (max-width: 480px){
+
+        .submain>div{
+          display: grid;
+         /* padding: 10px;
+          margin: auto;
+          align-items: center;
+          font-size: 1.5em;
+          width: 100%;*/
+         
+      }
+
+        .submain>div:nth-child(1){
+          background-color: lightseagreen;
+          grid-template-rows: 2em;
+        }
+        
+        .submain>div:nth-child(2){
+          background-color: skyblue;
+          grid-template-rows: auto;
+        }
+      }
+
+      /*tablet*/
+      @media screen and (max-width: 800px){
+
+        .main{
+          display: grid;
+          width: 90%;
+          margin: auto;
+          grid-template-columns: 1fr 1fr;
+          grid-gap: 2em;
+
+          grid-template-areas: 
+          'spotone spotone'
+          'coltwo coltwo'
+          'colthree colfour'
+          'colfive spotsix'
+          'spotseven spotseven'
+          'spoteight spoteight'
+        }
+        
+        .submain{
+          display:grid;
+          font-size: 1.25em;
+          text-align: center;
+        }
+        
+        .submain>div:nth-child(1){background-color:lightseagreen;}
+        .submain>div:nth-child(2){background-color:skyblue;}
+
+        .spotlight:nth-child(1){grid-area: spotone}
+        .spotlight:nth-child(6){grid-area: spotsix}
+        .spotlight:nth-child(7){grid-area: spotseven}
+        .spotlight:nth-child(8){grid-area: spoteight}
+
+        .col:nth-child(2){grid-area: coltwo}
+        .col:nth-child(3){grid-area: colthree}
+        .col:nth-child(4){grid-area: colfour}
+        .col:nth-child(5){grid-area: colfive}
+
+
+      }
+
+/*
+    THIS TASK REQUIRE YOU TO USE CSS GRID AND THEIR RELATED PROPERTIES
+  */
+
+    /*ORGANIZE YOUR CSS IN THE FOLLOWING ORDER, IF APPLICABLE
+
+    1. ELEMENT SELECTOR
+    2. ID SELECTOR
+    3. CLASS SELECTOR
+    4. DESCENDENT SELECTOR
+    5. CHILD SELECTOR
+    6. SIBLING SELECTOR
+    7. ATTRIBUTE SELECTOR
+    8. PSEUDO CLASS SELECTOR
+
+    FAILURE TO COMPLY WILL RESULTS IN MARK DEDUCTION*/
+  </style>
+</head>
+<body>
+  <!-- INSTRUCTIONS
+    YOU ARE NOT ALLOWED TO CHANGE ANY PART OF THE HTLM CODES (SUCH AS ADDING ID attributes or additional values to the classes atributes.) 
+  
+    YOUR TASK IS TO WRITE THE CSS CODE TO ACHIEVE THE REQUIRED OUTPUT-->
+<div class="main">
+  
+<div class="submain spotlight">
+  <div>Mark Twain</div>
+  <div>The man who does not read books has no advantage over the one who cannot read them.</div>
+</div>
+<div class="submain col">
+  <div>Mason Cooley</div>
+  <div>Procrastination makes easy things hard and hard things harder.</div>
+</div>
+<div class="submain col">
+  <div>Albert Einstein</div>
+  <div>
+A person who never made a mistake never tried anything new.</div>
+</div>
+<div class="submain col">
+  <div>Elon Musk</div>
+  <div>
+I think it’s possible to ordinary people to choose to be extraordinary.</div>
+</div>
+
+<div class="submain col">
+  <div>Jim Ryun</div>
+  <div>
+Motivation is what gets you started. Habit is what keeps you going.</div>
+</div>
+
+<div class="submain spotlight">
+  <div>Dr. Seuss</div>
+  <div>
+The more that you read, the more things you will know, the more that you learn, the more places you’ll go.</div>
+</div>
+
+<div class="submain spotlight">
+  <div>Chinese Proverb</div>
+  <div>
+He who asks a question is a fool for five minutes; he who does not ask a question remains a fool forever.</div>
+</div>
+
+<div class="submain spotlight">
+  <div>Martin Luther king</div>
+  <div>
+If you can’t fly, then run. If you can’t run, then walk. If you can’t walk, then crawl. But by all means, keep moving</div>
+</div>
+
+
+</div>
+</body>
+</html>
