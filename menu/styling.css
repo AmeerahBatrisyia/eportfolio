@@ -61,6 +61,18 @@ html, body {
     background-color: #d5c9df;
 }
 
+.btn-danger {
+    color: white;
+    background-color: #dcb8cb;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+}
+
+.btn-danger:hover {
+    background-color: #d5c9df;
+}
+
 .shop-item {
     margin: 30px;
 }
@@ -153,6 +165,19 @@ html, body {
 .cart-total-price {
     color: #333;
     font-size: 1.1em;
+}
+
+.cart-quantity-input {
+    height: 34px;
+    width: 50px;
+    border-radius: 5px;
+    border: 1px solid #56CCF2;
+    background-color: #eee;
+    color: #333;
+    padding: 0;
+    text-align: center;
+    font-size: 1.2em;
+    margin-right: 25px;
 }
 
 .btn-purchase {
