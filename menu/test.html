@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>receipt</title>
+
+	<style>
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 10px;
+  background-color: #CCD7E4;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: #DCB8CB;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 20px;
+}
+
+/*.item1 {
+  grid-area: 2 / 1 / span 2 / span 3;
+}*/
+</style>
+</head>
+<body onclick="receipt()">
+<div class="grid-container">
+  <div class="item1">Product</div>
+  <div class="item2">Quantity</div>
+  <div class="item3">Price</div>  
+  <div class="item4">Total</div>
+</div>
+<div class="grid-container">
+  <div class="item1"></div>
+  <div class="item2"></div>
+  <div class="item3"></div>  
+  <div class="item4"></div>
+</div>
+</body>
+</html>
